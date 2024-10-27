@@ -28,7 +28,7 @@
 
     .item h3 {
         color: #fff;
-        font-size: 1.5vw; /* 2vwから1.5vwに縮小 */
+        font-size: 2vw; /* 2vwから1.5vwに縮小 */
     }
 
     .item p {
@@ -147,7 +147,7 @@
 
     .item {
         border-radius: 1vw;
-        width: 45%; /* 32%から25%に縮小 */
+        width: 27%; /* 32%から25%に縮小 */
         margin-bottom: 4vw; /* 6vwから4vwに縮小 */
         background-color: rgba(255, 255, 255, 0.1);
         padding: 1.5vw; /* 2vwから1.5vwに縮小 */
@@ -155,12 +155,12 @@
 
     .item h3 {
         color: #fff;
-        font-size: 5vw; /* 2vwから1.5vwに縮小 */
+        font-size: 3vw; /* 2vwから1.5vwに縮小 */
     }
 
     .item p {
         color: #fff;
-        font-size: 3vw; /* 1vwから0.8vwに縮小 */
+        font-size: 2.5vw; /* 1vwから0.8vwに縮小 */
     }
 
     .item img {
@@ -196,6 +196,6 @@
 
     .jousai {
         color: white;
-        font-size: 1.5vw; /* 2.5vwから2vwに縮小 */
+        font-size: 3vw; /* 2.5vwから2vwに縮小 */
     }
 }

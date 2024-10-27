@@ -9,7 +9,7 @@
     }
     .protmagic, .attackmagic, .ultmagic {
         text-align: center;
-        font-size: 2vw; /* 3vwから2vwに縮小 */
+        font-size: 2.5vw; /* 3vwから2vwに縮小 */
     }
 
     .magic-container {
@@ -42,7 +42,7 @@
 
     .magic-item p {
         color: #fff;
-        font-size: 0.8vw; /* 1vwから0.8vwに縮小 */
+        font-size: 1vw; /* 1vwから0.8vwに縮小 */
     }
 
     .magic-item img {
@@ -181,7 +181,7 @@
         border-radius: 0.5vw;
         margin: 2vw auto;
         max-width: 80vw;
-        font-size: 8vw; /* 10vwから8vwに縮小 */
+        font-size: 10vw; /* 10vwから8vwに縮小 */
         margin-top: 8vw; /* 10vwから8vwに縮小 */
         margin-bottom: 12vw; /* 15vwから12vwに縮小 */
     }
@@ -221,7 +221,7 @@
     
     .jousai {
         color: white;
-        font-size: 4vw; /* 5vwから4vwに縮小 */
+        font-size: 3vw; /* 5vwから4vwに縮小 */
     }
     
 }
