@@ -1,0 +1,248 @@
+@media(min-width:769px){
+
+    /* ベーススタイル */
+body {
+    font-family: 'Noto Serif JP', serif;
+    background-color: #000;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    padding: 2vw;
+}
+
+/* タイトルセクション */
+.title h2 {
+    font-size: 5vw;
+    text-align: center;
+    color: #eaeaea;
+    margin-bottom: 15vw;
+}
+.story{
+    font-size: 1.5vw;
+    text-align: center;
+    margin-bottom: 15vw;
+}
+/* セクション共通スタイル */
+section {
+    margin-bottom: 5vw;
+}
+
+section h2 {
+    font-size: 3vw;
+    text-align: center;
+    color: #eaeaea;
+}
+
+/* 各エリアのセクション */
+.forest, .city, .cave, .boss {
+    text-align: center;
+    background-color: #333;
+    padding: 2vw;
+    border-radius: 10px;
+}
+.areas {
+    display: flex;
+    flex-direction: column;
+    gap: 3vw;
+    margin-bottom: 20vw;
+}
+.areas p{
+    font-size: 1.1vw;
+}
+
+.area {
+    display: flex;
+    align-items: center;
+    margin: 2vw 0;
+}
+
+.area img {
+    width: 80vw !important; /* これで強制的に変更 */
+    height: auto;
+    border-radius: 5px;
+}
+
+
+.area:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+.area p {
+    width: 45vw;
+    padding: 0 2vw;
+    color: #eaeaea;
+}
+
+
+.forest img, .city img, .cave img, .boss img {
+    width: 100%;
+    max-width: 60vw; /* ここを変更してみてください */
+    height: auto;
+    border-radius: 5px;
+}
+
+
+/* ボタンセクション */
+.navigation-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1vw; /* ボタン間のスペースを追加 */
+    max-width: 70vw;
+    margin: 0 auto; /* これで中央揃え */
+}
+
+.navigation-buttons button {
+    position: relative;
+    background-color: #000000; /* 背景を完全な黒に設定 */
+    border: none;
+    padding: 0; /* ボタンのパディングをリセット */
+    cursor: pointer;
+}
+ /* 画像ボタンを小さく */
+ .navigation-buttons .button-image {
+    width: 100%; /* ボタン全体の幅に合わせる */
+    height: auto;
+    display: block; /* 画像をボタン内でブロック要素に */
+}
+
+.navigation-buttons button:hover {
+    background-color: #777;
+}
+
+/* 近畿大学情祭委員会 */
+.jousai p {
+    margin-top: 20vw;
+    font-size: 1.5vw;
+    text-align: right;
+    margin-right: 2vw;
+    color: #cccccc;
+}
+
+}
+
+
+
+
+
+
+@media(max-width:768px){
+
+    body {
+        font-family: 'Noto Serif JP', serif;
+        background-color: #000;
+        color: #ffffff;
+        margin: 0;
+        padding: 0;
+    }
+    
+    main {
+        padding: 2vw;
+    }
+    
+    /* タイトルセクション */
+    .title h2 {
+        font-size: 8vw;
+        text-align: center;
+        color: #eaeaea;
+        margin-bottom: 20vw;
+    }
+    .story{
+        font-size: 4vw;
+        margin-bottom: 20vw;
+    }
+    
+    /* セクション共通スタイル */
+    section {
+        margin-bottom: 5vw;
+    }
+    
+    section h2 {
+        font-size: 3vw;
+        text-align: center;
+        color: #eaeaea;
+    }
+    
+    /* 各エリアのセクション */
+    .forest, .city, .cave, .boss {
+        text-align: center;
+        background-color: #333;
+        padding: 2vw;
+        border-radius: 10px;
+    }
+    .areas {
+        display: flex;
+        flex-direction: column;
+        gap: 3vw;
+    }
+    
+    .area {
+        flex-direction: column; /* 縦に並べる */
+        text-align: center; /* テキストを中央揃えに */
+    }
+
+    .area img {
+        width: 90vw !important; /* 画像の幅をさらに大きく */
+        margin-bottom: 2vw;
+    }
+
+    .area p {
+        width: 90vw; /* テキストの幅も大きく */
+        font-size:3.5vw;
+        padding: 0;
+        /* text-align: left; */
+    }
+
+    .navigation-buttons button {
+        font-size: 4vw; /* ボタンの文字サイズを大きく */
+        margin: 2vw;
+        padding: 2vw 4vw;
+    }
+
+    .jousai p {
+        font-size: 3vw; /* フッターの文字サイズ調整 */
+    }
+    
+    .area:nth-child(even) {
+        flex-direction: row-reverse;
+    }
+    
+    
+    
+    .forest img, .city img, .cave img, .boss img {
+        width: 100%;
+        max-width: 80vw; /* ここを変更してみてください */
+        height: auto;
+        border-radius: 5px;
+    }
+    
+    
+    /* ボタンセクション */
+.navigation-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1vw; /* ボタン間のスペースを追加 */
+    margin-bottom: 20vw;
+}
+
+.navigation-buttons button {
+    position: relative;
+    background-color: #000000; /* 背景を完全な黒に設定 */
+    border: none;
+    padding: 0; /* ボタンのパディングをリセット */
+    cursor: pointer;
+}
+ /* 画像ボタンを小さく */
+ .navigation-buttons .button-image {
+    width: 100%; /* ボタン全体の幅に合わせる */
+    height: auto;
+    display: block; /* 画像をボタン内でブロック要素に */
+}
+
+.navigation-buttons button:hover {
+    background-color: #777;
+}
+    
+}    

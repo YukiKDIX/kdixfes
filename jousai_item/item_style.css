@@ -1,0 +1,201 @@
+@media(min-width: 769px) {
+
+    body {
+        font-family: 'Noto Serif JP', serif;
+        margin: 0;
+        padding: 0;
+        background: #000; /* 黒背景 */
+        color: #fff;
+    }
+    .cityitem,.caveitem {
+        text-align: center;
+        font-size: 2vw; /* 3vwから2vwに縮小 */
+    }
+
+    .item-container {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+
+    .item {
+        width: 25%; /* 32%から25%に縮小 */
+        margin-bottom: 4vw; /* 6vwから4vwに縮小 */
+        background-color: rgba(255, 255, 255, 0.1);
+        padding: 1.5vw; /* 2vwから1.5vwに縮小 */
+        border-radius: 0.4vw;
+    }
+
+    .item h3 {
+        color: #fff;
+        font-size: 1.5vw; /* 2vwから1.5vwに縮小 */
+    }
+
+    .item p {
+        color: #fff;
+        font-size: 0.8vw; /* 1vwから0.8vwに縮小 */
+    }
+
+    .item img {
+        width: 6vw; /* 8vwから6vwに縮小 */
+        height: 6vw; /* 8vwから6vwに縮小 */
+    }
+
+    main {
+        padding: 1.5vw; /* 2vwから1.5vwに縮小 */
+        border-radius: 0.5vw;
+        margin: 2vw auto;
+        max-width: 70vw;
+        width: 100vw;
+    }
+
+    .title h2 {
+        padding: 1.5vw; /* 2vwから1.5vwに縮小 */
+        color: white;
+        border-radius: 0.5vw;
+        margin: 2vw auto;
+        text-align: center;
+        font-size: 5vw; /* 5vwから4vwに縮小 */
+        margin-top: 8vw; /* 10vwから8vwに縮小 */
+        margin-bottom: 12vw; /* 15vwから12vwに縮小 */
+    }
+
+    .story {
+        color: white;
+        padding: 1.5vw; /* 2vwから1.5vwに縮小 */
+        font-size: 1.5vw; /* 1.5vwから1.2vwに縮小 */
+        margin-bottom: 10vw; /* 12vwから10vwに縮小 */
+        text-align: center;
+    }
+
+    .navigation-buttons {
+        margin-top: 15vw;
+        display: flex;
+        justify-content: center;
+        gap: 1vw;
+        margin-bottom: 15vw; /* 20vwから15vwに縮小 */
+    }
+
+    .navigation-buttons .button-image {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+
+    .navigation-buttons button {
+        position: relative;
+        background-color: #000000;
+        border: none;
+        padding: 0;
+        cursor: pointer;
+    }
+
+    .navigation-buttons button:hover {
+        background-color: #3498db;
+    }
+
+    .jousai {
+        color: white;
+        font-size: 1.5vw; /* 2.5vwから2vwに縮小 */
+    }
+}
+@media(max-width:768px){
+    body {
+        font-family: 'Noto Serif JP', serif;
+        margin: 0;
+        padding: 0;
+        background: #000; /* 黒背景 */
+        color: #fff;
+    }
+
+    main {
+        padding: 1.5vw; /* 2vwから1.5vwに縮小 */
+        border-radius: 0.5vw;
+        margin: 2vw auto;
+        max-width: 90vw;
+        width: 100vw;
+    }
+
+    .title h2 {
+        padding: 1.5vw; /* 2vwから1.5vwに縮小 */
+        color: white;
+        border-radius: 0.5vw;
+        margin: 2vw auto;
+        max-width: 80vw;
+        font-size: 7vw; /* 5vwから4vwに縮小 */
+        margin-top: 8vw; /* 10vwから8vwに縮小 */
+        margin-bottom: 12vw; /* 15vwから12vwに縮小 */
+    }
+
+    .story {
+        color: white;
+        padding: 1.5vw; /* 2vwから1.5vwに縮小 */
+        font-size: 3vw; /* 1.5vwから1.2vwに縮小 */
+        margin-bottom: 10vw; /* 12vwから10vwに縮小 */
+    }
+    .cityitem,.caveitem {
+        text-align: center;
+        font-size: 4vw; /* 3vwから2vwに縮小 */
+    }
+
+    .item-container {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        gap: 3vw; /* 間隔を追加 */
+    }
+
+    .item {
+        border-radius: 1vw;
+        width: 45%; /* 32%から25%に縮小 */
+        margin-bottom: 4vw; /* 6vwから4vwに縮小 */
+        background-color: rgba(255, 255, 255, 0.1);
+        padding: 1.5vw; /* 2vwから1.5vwに縮小 */
+    }
+
+    .item h3 {
+        color: #fff;
+        font-size: 5vw; /* 2vwから1.5vwに縮小 */
+    }
+
+    .item p {
+        color: #fff;
+        font-size: 3vw; /* 1vwから0.8vwに縮小 */
+    }
+
+    .item img {
+        width: 15vw; /* 8vwから6vwに縮小 */
+        height: 15vw; /* 8vwから6vwに縮小 */
+    }
+
+    .navigation-buttons {
+        margin-top: 15vw;
+        display: flex;
+        justify-content: center;
+        gap: 1vw;
+        margin-bottom: 15vw; /* 20vwから15vwに縮小 */
+    }
+
+    .navigation-buttons .button-image {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+
+    .navigation-buttons button {
+        position: relative;
+        background-color: #000000;
+        border: none;
+        padding: 0;
+        cursor: pointer;
+    }
+
+    .navigation-buttons button:hover {
+        background-color: #3498db;
+    }
+
+    .jousai {
+        color: white;
+        font-size: 1.5vw; /* 2.5vwから2vwに縮小 */
+    }
+}

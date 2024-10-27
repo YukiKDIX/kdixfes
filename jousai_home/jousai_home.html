@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>KDIX_DMRPG_home</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="home_style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- 
+MIT License
+
+Copyright (c) [year] Michał Sajnóg
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.
+-->
+
+</head>
+<body>
+        <!-- メインセクション -->
+    <main>
+
+        <!-- タイトルセクション -->
+        <section class="title">
+            <h2 data-aos="fade" data-aos-duration="2000" >情報学部祭<br>デジタルフロンティア</h2>
+        </section>
+
+        <!-- ストーリーセクション -->
+        <section class="story" data-aos="fade-down" data-aos-duration="1200" data-aos-delay="1000">
+            <p>
+                ある日突如として現れたデジタル異空間、<br>
+                普段の生活では出入りのできない領域のはずの空間。<br>
+                私たちが住んでいる地球とは全くの無縁の世界、放っておいても構わない世界。<br>
+                しかし、あなたはデジタル異空間を見つけてしまった。<br>
+                その世界を救う唯一無二の英雄になれるかもしれない存在になってしまった。<br>
+                この世界の住人のために勇気を出してくれたあなたに救うことはできるだろうか、<br>
+                その物語が今ここで始まる。</p>
+        </section>
+
+        <!-- 日時セクション -->
+        <section class="day_and_time" data-aos="fade" data-aos-duration="1200">
+            <h2>日時</h2>
+            <p>11/2（土）〜 11/4 (月) <br>
+                10:00~19:00</p>
+        </section>
+
+
+        <!-- 場所セクション -->
+        <section class="place">
+            <h2>場所</h2>
+            <img src="kindai_map.png" height=450>
+            <pre>
+    E館1階 ロビー・・・受付<br>
+    E館1階 101講義室前廊下・・・待機列<br>           
+    E館1階 101講義室・・・メインエリア<br>
+    E館1階 i-CORE・・・？？？
+            </pre> 
+        </section>
+        <section class="buttonDetail">
+            <h2>デジタルフロンティア詳細</h2>
+            <p>クリックして詳細をご確認いただけます。↓</p>
+        </section>
+        <section class="navigation-buttons">
+            <button id="areaBtn">
+                <img src="../area.JPG" alt="エリアボタン" class="button-image">
+            </button>
+            <button id="itemBtn">
+                <img src="../item.JPG" alt="アイテムボタン" class="button-image">
+            </button>
+            <button id="magicBtn">
+                <img src="../magic.JPG" alt="魔法ボタン" class="button-image">
+            </button>
+        </section>
+        <script>
+            document.getElementById("areaBtn").addEventListener("click", function() {
+                window.location.href = "../jousai_area/jousai_area.html"; // 一つ上の階層のjousai_areaフォルダにあるHTMLに遷移
+            });
+        
+            document.getElementById("itemBtn").addEventListener("click", function() {
+                window.location.href = "../jousai_item/jousai_item.html"; // 一つ上の階層のjousai_itemフォルダにあるHTMLに遷移
+            });
+        
+            document.getElementById("magicBtn").addEventListener("click", function() {
+                window.location.href = "../jousai_magic/jousai_magic.html"; // 一つ上の階層のjousai_magicフォルダにあるHTMLに遷移
+            });
+        </script>
+
+        <!-- 近畿大学情祭委員会 -->
+        <section class="jousai">
+            <p align="right">近畿大学情報学部祭実行委員会</p>
+        </section>
+    </main>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+</html>

@@ -1,0 +1,188 @@
+/* PC表示 */
+@media (min-width: 769px) {
+    body::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: url('Bossbattle_lightup.jpg') no-repeat center center/cover; /* 背景画像 */
+        background-attachment: fixed; /* 背景画像を固定 */
+        opacity: 0.5; /* 画像の透明度 */
+        z-index: -1; /* コンテンツの後ろに配置 */
+    }
+    body {
+        font-family: 'Noto Serif JP', serif;
+        margin: 0;
+        padding: 0;
+        background: #000;
+        color: #fff;
+    }
+
+    main {
+        max-width: 80vw;
+        padding: 40px;
+        margin: 0 auto;
+    }
+
+    .title h2 {
+        font-size: 6vw;
+        text-align: left;
+        margin-bottom: 10vw;
+        margin-left: -8vw;
+    }
+
+    .story {
+        font-size: 1.2vw;
+        line-height: 1.6;
+        max-width: 80vw;
+        margin-bottom: 15vw;
+    }
+    .day_and_time h2{
+        font-size:3vw;
+    }
+    .day_and_time p{
+        font-size: 2vw;
+        margin-bottom: 10vw;
+    }
+    .buttonDetail h2{
+        font-size: 4vw;
+        margin-bottom: 5vw;
+    }
+    .buttonDetail p{
+        font-size: 1.5vw;
+        margin-bottom: 5vw;
+    }
+
+    .navigation-buttons {
+        display: flex;
+        justify-content: center;
+        gap: 1vw; /* ボタン間のスペースを追加 */
+        margin-bottom: 20vw;
+        max-width: 70vw;
+        margin: 0 auto; /* これで中央揃え */
+    }
+    
+    .navigation-buttons button {
+        position: relative;
+        background-color: #000000; /* 背景を完全な黒に設定 */
+        border: none;
+        padding: 0; /* ボタンのパディングをリセット */
+        cursor: pointer;
+    }
+    
+
+
+    /* 画像ボタンを小さく */
+    .navigation-buttons .button-image {
+        width: 100%; /* ボタン全体の幅に合わせる */
+        height: auto;
+        display: block; /* 画像をボタン内でブロック要素に */
+    }
+    
+    .place img {
+        width: 70vw; /* 画像の幅を70vwに設定 */
+        height: 35vw;
+        display: block; /* 画像をブロック要素に */
+        margin: 0 auto; /* 画像を中央揃え */
+    }
+    
+    .place h2{
+        font-size: 4vw;
+    }
+
+    .place pre{
+        font-size: 2vw;
+        margin-bottom: 20vw;
+    }
+    .jousai{
+        margin-top: 20vw;
+        font-size: 1.75vw;
+    }
+}
+
+/* スマホ表示 */
+@media (max-width: 768px) {
+    body::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 130vw;
+        background: url('Bossbattle_lightup.jpg') no-repeat center center/cover; /* 背景画像 */
+        opacity: 0.8; /* 画像の透明度 */
+        z-index: -1; /* コンテンツの後ろに配置 */
+    }
+    body {
+        font-family: 'Noto Serif JP', serif;
+        background: #000;
+        color: #fff;
+    }
+
+    main {
+        padding: 20px;
+    }
+
+    .title h2 {
+        font-size: 8vw;
+        text-align: center;
+        margin-bottom: 25vw;
+        margin-top: 15vw;
+    }
+
+    .story {
+        font-size: 3vw;
+        text-align: left;
+        margin-bottom: 20vw;
+    }
+    .day_and_time{
+        margin-bottom: 20vw;
+    }
+    .buttonDetail{
+        margin-top: 20vw;
+    }
+    .buttonDetail p{
+        font-size: 3vw;
+        margin-bottom: 10vw;
+    }
+
+    .navigation-buttons {
+        display: flex;
+        justify-content: center;
+        gap: 1vw; /* ボタン間のスペースを追加 */
+        margin-bottom: 20vw;
+    }
+    
+    .navigation-buttons button {
+        position: relative;
+        background-color: #000000; /* 背景を完全な黒に設定 */
+        border: none;
+        padding: 0; /* ボタンのパディングをリセット */
+        cursor: pointer;
+    }
+    
+
+
+    /* 画像ボタンを小さく */
+    .navigation-buttons .button-image {
+        width: 100%; /* ボタン全体の幅に合わせる */
+        height: auto;
+        display: block; /* 画像をボタン内でブロック要素に */
+    }
+    
+   
+    .place img {
+        width: 80vw; /* 画像の幅を70vwに設定 */
+        height: 40vw;
+        display: block; /* 画像をブロック要素に */
+        margin: 0 auto; /* 画像を中央揃え */
+    }
+    .place pre{
+        font-size: 4vw;
+    }
+    .jousai{
+        margin-top: 40vw;
+    }
+}

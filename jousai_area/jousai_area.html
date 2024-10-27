@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KDIX_DMRPG_area</title>
+    <link rel="stylesheet" href="area_style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200..900&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- 
+MIT License
+
+Copyright (c) [year] Michał Sajnóg
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.
+-->
+
+</head>
+<body>
+    <!-- メインセクション -->
+    <main>
+
+        <!-- タイトルセクション -->
+        <section class="title">
+            <h2>エリア紹介</h2>
+        </section>
+
+        <!-- ストーリーセクション -->
+        <section class="story">
+            <p>この世界は主に4つのエリアから成る。ここではそのエリアでできることについて紹介する。</p>
+        </section>
+
+        <!-- 各エリアの画像セクション -->
+        <section class="areas">
+            <!-- 森 -->
+            <div class="area forest" data-aos="fade-right"data-aos-duration="1200">
+                <img src="./forest/forest.png" alt="森の画像">
+                <p>ここでは森での冒険を楽しむことができる。未知の生物やアイテムが豊富に眠っている。</p>
+            </div>
+        
+            <!-- 街 -->
+            <div class="area city" data-aos="fade-left"data-aos-duration="1200">
+                <img src="./city/witchHouse.png" alt="街の画像">
+                <p>
+                    このエリアでは1回の周回で魔法アイテムの購入、および魔法の伝承のどちらか1つを行うことができる。複数周回可のため
+                    アイテムも魔法もどちらも取得可能だが、<br>1回の周回で両方同時に取得はできないので注意。
+                    <br><br>アイテムの購入では、アイテムが全部で9つあり自身の所持しているゴールドから1つ購入することができる。
+                    <br><br>魔法の伝承では、「防御魔法・攻撃魔法・究極魔法」の<br>3種類あり、またそれぞれに3種類あるのでそれぞれ1つずつ合計3個選ぶことができる。
+                    魔女が数字列に変換された文を言うので、それを正しく詠唱(入力)できた回数に応じて魔法を入手できるかが決まる。
+                    <br><br>いずれもボス戦でのみ使用可能。 
+                    </p>
+            </div>
+        
+            <!-- 洞窟 -->
+            <div class="area cave" data-aos="fade-right"data-aos-duration="1200">
+                <img src="./cave/cave.png" alt="洞窟の画像">
+                <p>洞窟で手に入れたアイテムは鑑定士ルクルンの家に<br>行くことで鑑定してもらうことができます。<br>
+                    彼にQRコードを見せることでアイテムがもらえます。<br><br>
+                    指定されたQRコードと<br>完全に一致している場合はすごいアイテムを<br>にているQRコードの場合はふつうのアイテムを<br>異なるQRコードの場合はぼろいアイテムを<br>
+                    入手することができます。<br><br>
+                    稀に違いが分かりにくいQRコードが紛れています。<br>正解した場合はレアアイテムをもらえるかも...！？</p>
+            </div>
+        
+            <!-- ボス -->
+            <div class="area boss" data-aos="fade-left"data-aos-duration="1200">
+                <img src="boss_image.jpg" alt="ボスの画像">
+                <p>最後の戦いが待つボスエリア。強力な敵に挑み、勝利を目指せ！</p>
+            </div>
+        </section>
+        
+
+        <!-- ナビゲーションボタン -->
+        <section class="navigation-buttons">
+            <button id="homeBtn">
+                <img src="../home.JPG" alt="ホームボタン" class="button-image">
+            </button>
+            <button id="itemBtn">
+                <img src="../item.JPG" alt="アイテムボタン" class="button-image">
+            </button>
+            <button id="magicBtn">
+                <img src="../magic.JPG" alt="魔法ボタン" class="button-image">
+            </button>
+        </section>
+
+        <script>
+            document.getElementById("homeBtn").addEventListener("click", function() {
+                window.location.href = "../jousai_home/jousai_home.html";
+            });
+
+            document.getElementById("itemBtn").addEventListener("click", function() {
+                window.location.href = "../jousai_item/jousai_item.html";
+            });
+
+            document.getElementById("magicBtn").addEventListener("click", function() {
+                window.location.href = "../jousai_magic/jousai_magic.html";
+            });
+        </script>
+
+        <!-- 近畿大学情祭委員会 -->
+        <section class="jousai">
+            <p align="right">近畿大学情報学部祭実行委員会</p>
+        </section>
+    </main>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+</html>
