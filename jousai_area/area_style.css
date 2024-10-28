@@ -78,13 +78,11 @@ section h2 {
 }
 
 
-.area:nth-child(4n+1), 
-.area:nth-child(4n+2) {
+.area:nth-child(4n+1), .area:nth-child(4n+2) {
     flex-direction: row; /* 1, 2番目のパターン */
 }
 
-.area:nth-child(4n+3), 
-.area:nth-child(4n+4) {
+.area:nth-child(4n+3), .area:nth-child(4n+4) {
     flex-direction: row-reverse; /* 3, 4番目のパターン */
 }
 
