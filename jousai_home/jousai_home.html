@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>KDIX_DMRPG_home</title>
+    <title>情報学部祭デジタルフロンティア</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200..900&display=swap" rel="stylesheet">
@@ -33,11 +33,11 @@ all copies or substantial portions of the Software.
 
         <!-- タイトルセクション -->
         <section class="title">
-            <h2 data-aos="fade" data-aos-duration="2000" >情報学部祭<br>デジタルフロンティア</h2>
+            <h2 data-aos="fade" data-aos-duration="1500" >情報学部祭<br>デジタルフロンティア</h2>
         </section>
 
         <!-- ストーリーセクション -->
-        <section class="story" data-aos="fade-down" data-aos-duration="1200" data-aos-delay="1000">
+        <section class="story" data-aos="fade-down" data-aos-duration="1200" data-aos-delay="700">
             <p>
                 ある日突如として現れたデジタル異空間、<br>
                 普段の生活では出入りのできない領域のはずの空間。<br>
@@ -64,7 +64,7 @@ all copies or substantial portions of the Software.
     E館1階 ロビー・・・受付<br>
     E館1階 101講義室前廊下・・・待機列<br>           
     E館1階 101講義室・・・メインエリア<br>
-    E館1階 i-CORE・・・？？？
+    E館1階 i-CORE・・・ボスエリア
             </pre> 
         </section>
         <section class="buttonDetail">
@@ -73,37 +73,49 @@ all copies or substantial portions of the Software.
         </section>
         <section class="navigation-buttons">
             <button id="areaBtn">
-                <img src="../area.JPG" alt="エリアボタン" class="button-image">
+                <img src="../area.PNG" alt="エリアボタン" class="button-image">
             </button>
             <button id="itemBtn">
-                <img src="../item.JPG" alt="アイテムボタン" class="button-image">
+                <img src="../item.PNG" alt="アイテムボタン" class="button-image">
             </button>
             <button id="magicBtn">
-                <img src="../magic.JPG" alt="魔法ボタン" class="button-image">
+                <img src="../magic.PNG" alt="魔法ボタン" class="button-image">
             </button>
-        </section>
         <script>
             document.getElementById("areaBtn").addEventListener("click", function() {
-                window.location.href = "../jousai_area/jousai_area.html"; // 一つ上の階層のjousai_areaフォルダにあるHTMLに遷移
+                window.location.href = "../jousai_area/jousai_area.html";
             });
         
             document.getElementById("itemBtn").addEventListener("click", function() {
-                window.location.href = "../jousai_item/jousai_item.html"; // 一つ上の階層のjousai_itemフォルダにあるHTMLに遷移
+                window.location.href = "../jousai_item/jousai_item.html";
             });
         
             document.getElementById("magicBtn").addEventListener("click", function() {
-                window.location.href = "../jousai_magic/jousai_magic.html"; // 一つ上の階層のjousai_magicフォルダにあるHTMLに遷移
+                window.location.href = "../jousai_magic/jousai_magic.html";
             });
+           
         </script>
-
-        <!-- 近畿大学情祭委員会 -->
-        <section class="jousai">
-            <p align="right">近畿大学情報学部祭実行委員会</p>
-        </section>
     </main>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();
     </script>
 </body>
+<!-- フッターエリア -->
+<footer class="footer">
+    <section class="iconButtons">
+        <button id="instagram">
+            <img src="../instaIcon.png" alt="インスタリンク" class="icon">
+        </button>
+    </section>
+    <section class="jousai">
+        <p align="right">令和6年度近畿大学情報学部祭実行委員会</p>
+    </section>
+    <script>
+         document.getElementById("instagram").addEventListener("click", function() {
+            window.location.href = "https://www.instagram.com/kdixjosai";
+        });
+    </script>
+</footer>
+
 </html>

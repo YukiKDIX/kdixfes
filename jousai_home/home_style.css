@@ -46,14 +46,6 @@
         font-size: 2vw;
         margin-bottom: 10vw;
     }
-    .buttonDetail h2{
-        font-size: 4vw;
-        margin-bottom: 5vw;
-    }
-    .buttonDetail p{
-        font-size: 1.5vw;
-        margin-bottom: 5vw;
-    }
 
     .navigation-buttons {
         display: flex;
@@ -66,10 +58,19 @@
     
     .navigation-buttons button {
         position: relative;
-        background-color: #000000; /* 背景を完全な黒に設定 */
+        background-color: transparent;
         border: none;
-        padding: 0; /* ボタンのパディングをリセット */
+        padding: 0;
         cursor: pointer;
+        transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    
+
+    .navigation-buttons button:hover {
+        transform: scale(1.05)!important; /* 少し拡大 */
+        background-color: rgba(255, 255, 255, 0.2); /* 背景色を少し変える */
+        box-shadow: 0px 0px 10px rgba(52, 152, 219, 0.75), inset 0px 0px 5px rgba(255, 255, 255, 0.5);
     }
     
 
@@ -82,24 +83,67 @@
     }
     
     .place img {
-        width: 70vw; /* 画像の幅を70vwに設定 */
-        height: 35vw;
+        width: 60vw; /* 画像の幅を70vwに設定 */
+        height: 30vw;
         display: block; /* 画像をブロック要素に */
         margin: 0 auto; /* 画像を中央揃え */
     }
     
     .place h2{
-        font-size: 4vw;
+        font-size: 3vw;
     }
 
     .place pre{
-        font-size: 2vw;
-        margin-bottom: 20vw;
+        margin-top: 5vw;
+        margin-left: 5vw;
+        font-size: 1.5vw;
+        margin-bottom: 10vw;
     }
-    .jousai{
-        margin-top: 20vw;
-        font-size: 1.75vw;
+    .buttonDetail h2{
+        font-size: 3vw;
+        margin-bottom: 5vw;
     }
+    .buttonDetail p{
+        font-size: 1.5vw;
+        margin-bottom: 5vw;
+    }
+   
+/* フッタースタイル */
+.footer {
+    background-color: #333; /* 灰色背景 */
+    padding: 5vw; /* パディング調整 */
+    text-align: center;
+}
+
+.footer .iconButtons {
+    margin-top: 2vw; /* フッター内のボタン間の余白調整 */
+}
+
+.iconButtons button {
+    width: 10vw;
+    height: 10vw;
+    background-color: transparent; /* 背景を透明にして画像に合わせる */
+    border: none;
+    padding: 0; /* ボタンのパディングをリセット */
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.iconButtons img {
+    width: 8vw; /* 画像のサイズをボタンに合わせる */
+    height: 8vw;
+}
+
+.footer .jousai p {
+    font-size: 2vw;
+    text-align: right;
+    color: #fff;
+    margin-top: 2vw;
+}
+
+
 }
 
 /* スマホ表示 */
@@ -112,7 +156,7 @@
         width: 100vw;
         height: 130vw;
         background: url('Bossbattle_lightup.jpg') no-repeat center center/cover; /* 背景画像 */
-        opacity: 0.8; /* 画像の透明度 */
+        opacity: 0.5; /* 画像の透明度 */
         z-index: -1; /* コンテンツの後ろに配置 */
     }
     body {
@@ -171,7 +215,6 @@
         height: auto;
         display: block; /* 画像をボタン内でブロック要素に */
     }
-    
    
     .place img {
         width: 80vw; /* 画像の幅を70vwに設定 */
@@ -182,8 +225,37 @@
     .place pre{
         font-size: 4vw;
     }
-    .jousai{
-        margin-top: 40vw;
+    .footer {
+        background-color: #333; /* 灰色背景 */
+        padding: 5vw; /* パディング調整 */
+        text-align: center;
+    }
+    
+    .footer .iconButtons {
+        margin-top: 2vw; /* フッター内のボタン間の余白調整 */
+    }
+    
+    .iconButtons button {
+        width: 10vw;
+        height: 10vw;
+        background-color: transparent; /* 背景を透明にして画像に合わせる */
+        border: none;
+        padding: 0; /* ボタンのパディングをリセット */
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .iconButtons img {
+        width: 10vw; /* 画像のサイズをボタンに合わせる */
+        height: 10vw;
+    }
+    
+    .footer .jousai p {
         font-size: 3vw;
+        text-align: right;
+        color: #fff;
+        margin-top: 4vw;
     }
 }

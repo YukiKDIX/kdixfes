@@ -11,6 +11,9 @@
         text-align: center;
         font-size: 2vw; /* 3vwから2vwに縮小 */
     }
+    .cityitem h3, .caveitem h3{
+        font-size: 1.5vw;
+    }
 
     .item-container {
         display: flex;
@@ -24,7 +27,9 @@
         background-color: rgba(255, 255, 255, 0.1);
         padding: 1.5vw; /* 2vwから1.5vwに縮小 */
         border-radius: 0.4vw;
+        transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
     }
+   
 
     .item h3 {
         color: #fff;
@@ -33,12 +38,17 @@
 
     .item p {
         color: #fff;
-        font-size: 0.8vw; /* 1vwから0.8vwに縮小 */
+        font-size: 1vw; /* 1vwから0.8vwに縮小 */
     }
 
     .item img {
         width: 6vw; /* 8vwから6vwに縮小 */
         height: 6vw; /* 8vwから6vwに縮小 */
+    }
+    .item:hover {
+        transform: scale(1.05)!important; /* 少し拡大 */
+        background-color: rgba(255, 255, 255, 0.2); /* 背景色を少し変える */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
     }
 
     main {
@@ -81,17 +91,23 @@
         height: auto;
         display: block;
     }
+    
 
     .navigation-buttons button {
         position: relative;
-        background-color: #000000;
+        background-color: transparent;
         border: none;
         padding: 0;
         cursor: pointer;
+        transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
     }
 
+    
+
     .navigation-buttons button:hover {
-        background-color: #3498db;
+        transform: scale(1.05)!important; /* 少し拡大 */
+        background-color: rgba(255, 255, 255, 0.2); /* 背景色を少し変える */
+        box-shadow: 0px 0px 10px rgba(52, 152, 219, 0.75), inset 0px 0px 5px rgba(255, 255, 255, 0.5);
     }
 
     .jousai {
@@ -133,9 +149,12 @@
         font-size: 3vw; /* 1.5vwから1.2vwに縮小 */
         margin-bottom: 10vw; /* 12vwから10vwに縮小 */
     }
-    .cityitem,.caveitem {
+    .cityitem,.caveitem{
         text-align: center;
         font-size: 4vw; /* 3vwから2vwに縮小 */
+    }
+    .cityitem h3,.caveitem h3{
+        font-size: 3vw;
     }
 
     .item-container {
@@ -151,6 +170,7 @@
         margin-bottom: 4vw; /* 6vwから4vwに縮小 */
         background-color: rgba(255, 255, 255, 0.1);
         padding: 1.5vw; /* 2vwから1.5vwに縮小 */
+        transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
     }
 
     .item h3 {
@@ -166,6 +186,11 @@
     .item img {
         width: 15vw; /* 8vwから6vwに縮小 */
         height: 15vw; /* 8vwから6vwに縮小 */
+    }
+    .item:hover {
+        transform: scale(1.05)!important; /* 少し拡大 */
+        background-color: rgba(255, 255, 255, 0.2); /* 背景色を少し変える */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
     }
 
     .navigation-buttons {
@@ -184,14 +209,19 @@
 
     .navigation-buttons button {
         position: relative;
-        background-color: #000000;
+        background-color: transparent;
         border: none;
         padding: 0;
         cursor: pointer;
+        transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
     }
 
+    
+
     .navigation-buttons button:hover {
-        background-color: #3498db;
+        transform: scale(1.05)!important; /* 少し拡大 */
+        background-color: rgba(255, 255, 255, 0.2); /* 背景色を少し変える */
+        box-shadow: 0px 0px 10px rgba(52, 152, 219, 0.75), inset 0px 0px 5px rgba(255, 255, 255, 0.5);
     }
 
     .jousai {

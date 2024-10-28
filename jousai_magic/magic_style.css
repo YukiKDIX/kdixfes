@@ -64,15 +64,15 @@
         border-radius: 0.5vw;
         margin: 2vw auto;
         max-width: 70vw;
-        font-size: 5vw; /* 5vwから4vwに縮小 */
-        margin-top: 8vw; /* 10vwから8vwに縮小 */
-        margin-bottom: 12vw; /* 15vwから12vwに縮小 */
+        font-size: 6vw; /* 5vwから4vwに縮小 */
+        margin-top: 4vw; /* 10vwから8vwに縮小 */
+        margin-bottom: 10vw; /* 15vwから12vwに縮小 */
     }
 
     .story {
         color: white;
         padding: 1.5vw; /* 2vwから1.5vwに縮小 */
-        font-size: 1.9vw; /* 1.5vwから1.2vwに縮小 */
+        font-size: 1.55vw; /* 1.5vwから1.2vwに縮小 */
         margin-bottom: 10vw; /* 12vwから10vwに縮小 */
     }
 
@@ -92,15 +92,18 @@
 
     .navigation-buttons button {
         position: relative;
-        background-color: #000000;
+        background-color: transparent;
         border: none;
         padding: 0;
         cursor: pointer;
+        transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
     }
 
+    
+
     .navigation-buttons button:hover {
-        background-color: #3498db;
-     
+        transform: scale(1.05)!important; /* 少し拡大 */
+        background-color: rgba(255, 255, 255, 0.2); /* 背景色を少し変える */
         box-shadow: 0px 0px 10px rgba(52, 152, 219, 0.75), inset 0px 0px 5px rgba(255, 255, 255, 0.5);
     }
 
@@ -151,7 +154,9 @@
         background-color: rgba(255, 255, 255, 0.1);
         border-radius: 1vw;
         padding: 1vw; /* パディングを追加 */
+        transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
     }
+    
     .magic-item:hover {
         transform: scale(1.05)!important; /* 少し拡大 */
         background-color: rgba(255, 255, 255, 0.2); /* 背景色を少し変える */
@@ -169,8 +174,8 @@
     }
     
     .magic-item img {
-        width: 15vw; /* 15vwから12vwに縮小 */
-        height: 15vw; /* 15vwから12vwに縮小 */
+        width: 16vw; /* 15vwから12vwに縮小 */
+        height: 16vw; /* 15vwから12vwに縮小 */
         margin-top: 1vw;
     }
     
@@ -209,14 +214,17 @@
     
     .navigation-buttons button {
         position: relative;
-        background-color: #000000;
+        background-color: transparent;
         border: none;
         padding: 0;
         cursor: pointer;
+        transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
     }
     
     .navigation-buttons button:hover {
-        background-color: #3498db;
+        transform: scale(1.05)!important; /* 少し拡大 */
+        background-color: rgba(255, 255, 255, 0.2); /* 背景色を少し変える */
+        box-shadow: 0px 0px 10px rgba(52, 152, 219, 0.75), inset 0px 0px 5px rgba(255, 255, 255, 0.5);
     }
     
     .jousai {
