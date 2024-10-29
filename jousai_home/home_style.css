@@ -194,12 +194,14 @@
     }
     body {
         font-family: 'Noto Serif JP', serif;
+        margin: 0;
+        padding: 0;
         background: #000;
         color: #fff;
     }
 
     main {
-        padding: 20px;
+        padding: 6vw;
     }
 
     .title h2 {
@@ -293,10 +295,7 @@
     .place pre{
         font-size: 4vw;
     }
-    footer{
-        margin: 0;
-        padding: 0;
-    }
+    
     .footer {
         background-color: #333; /* 灰色背景 */
         padding: 1vw;
@@ -309,6 +308,7 @@
     }
     
     .footer .iconButtons {
+        margin-left: 3vw;
         display: flex;
         gap: 1vw; /* フッター内のボタン間の余白調整 */
     }
@@ -334,7 +334,7 @@
         font-size: 3vw; /* フッターテキストのサイズを小さく調整 */
         text-align: right;
         color: #fff;
-        margin: 0;
+        margin-right: 3vw;
     }
     
 }
