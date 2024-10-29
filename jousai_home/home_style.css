@@ -53,7 +53,7 @@
         gap: 1vw; /* ボタン間のスペースを追加 */
         margin-bottom: 20vw;
         max-width: 70vw;
-        margin: 0 auto; /* これで中央揃え */
+        margin: 0 auto; 
     }
     
     .navigation-buttons button {
@@ -68,25 +68,25 @@
     
 
     .navigation-buttons button:hover {
-        transform: scale(1.05)!important; /* 少し拡大 */
-        background-color: rgba(255, 255, 255, 0.2); /* 背景色を少し変える */
+        transform: scale(1.05)!important; 
+        background-color: rgba(255, 255, 255, 0.2);
         box-shadow: 0px 0px 10px rgba(52, 152, 219, 0.75), inset 0px 0px 5px rgba(255, 255, 255, 0.5);
     }
     
 
 
-    /* 画像ボタンを小さく */
+
     .navigation-buttons .button-image {
-        width: 100%; /* ボタン全体の幅に合わせる */
+        width: 100%; 
         height: auto;
-        display: block; /* 画像をボタン内でブロック要素に */
+        display: block;
     }
     
     .place img {
-        width: 60vw; /* 画像の幅を70vwに設定 */
+        width: 60vw;
         height: 30vw;
-        display: block; /* 画像をブロック要素に */
-        margin: 0 auto; /* 画像を中央揃え */
+        display: block;
+        margin: 0 auto;
     }
     
     .place h2{
@@ -108,10 +108,10 @@
         margin-bottom: 5vw;
     }
    
-/* フッタースタイル */
+
 .footer {
-    background-color: #333; /* 灰色背景 */
-    padding: 5vw; /* パディング調整 */
+    background-color: #333; /* フッターの背景色 */
+    padding: 5vw;
     text-align: center;
 }
 
@@ -122,9 +122,9 @@
 .iconButtons button {
     width: 10vw;
     height: 10vw;
-    background-color: transparent; /* 背景を透明にして画像に合わせる */
+    background-color: transparent; /* ボタンの背景透過 */
     border: none;
-    padding: 0; /* ボタンのパディングをリセット */
+    padding: 0; 
     cursor: pointer;
     display: flex;
     align-items: center;
@@ -132,7 +132,7 @@
 }
 
 .iconButtons img {
-    width: 8vw; /* 画像のサイズをボタンに合わせる */
+    width: 8vw; 
     height: 8vw;
 }
 
@@ -146,7 +146,7 @@
 
 }
 
-/* スマホ表示 */
+
 @media (max-width: 768px) {
     body::before {
         content: '';
@@ -195,39 +195,39 @@
     .navigation-buttons {
         display: flex;
         justify-content: center;
-        gap: 1vw; /* ボタン間のスペースを追加 */
+        gap: 1vw; 
         margin-bottom: 20vw;
     }
     
     .navigation-buttons button {
         position: relative;
-        background-color: #000000; /* 背景を完全な黒に設定 */
+        background-color: transparent;
         border: none;
-        padding: 0; /* ボタンのパディングをリセット */
+        padding: 0; 
         cursor: pointer;
     }
     
 
 
-    /* 画像ボタンを小さく */
+
     .navigation-buttons .button-image {
-        width: 100%; /* ボタン全体の幅に合わせる */
+        width: 100%; 
         height: auto;
-        display: block; /* 画像をボタン内でブロック要素に */
+        display: block;
     }
    
     .place img {
-        width: 80vw; /* 画像の幅を70vwに設定 */
+        width: 80vw; /* 画像の幅を設定 */
         height: 40vw;
-        display: block; /* 画像をブロック要素に */
-        margin: 0 auto; /* 画像を中央揃え */
+        display: block; 
+        margin: 0 auto;
     }
     .place pre{
         font-size: 4vw;
     }
     .footer {
         background-color: #333; /* 灰色背景 */
-        padding: 5vw; /* パディング調整 */
+        padding: 5vw; 
         text-align: center;
     }
     
@@ -238,9 +238,9 @@
     .iconButtons button {
         width: 10vw;
         height: 10vw;
-        background-color: transparent; /* 背景を透明にして画像に合わせる */
+        background-color: transparent; /* 背景透明 */
         border: none;
-        padding: 0; /* ボタンのパディングをリセット */
+        padding: 0; 
         cursor: pointer;
         display: flex;
         align-items: center;
@@ -248,7 +248,7 @@
     }
     
     .iconButtons img {
-        width: 10vw; /* 画像のサイズをボタンに合わせる */
+        width: 10vw; 
         height: 10vw;
     }
     
