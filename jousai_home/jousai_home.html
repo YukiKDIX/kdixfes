@@ -54,6 +54,13 @@ all copies or substantial portions of the Software.
             <p>11/2（土）〜 11/4 (月) <br>
                 10:00~19:00</p>
         </section>
+        <section class="game">
+            <h2>ゲームアカウント作成</h2>
+            <p>こちらから体験していただくゲームのアカウントを作成できます。</p>
+            <button id="game.kdixfes">
+                <img src="../game.kdixfes.PNG" alt="アカウント作成のリンク" class="button-game">
+            </button>
+        </section>
 
 
 
@@ -93,6 +100,9 @@ all copies or substantial portions of the Software.
             document.getElementById("magicBtn").addEventListener("click", function() {
                 window.location.href = "../jousai_magic/jousai_magic.html";
             });
+            document.getElementById("game.kdixfes").addEventListener("click", function() {
+            window.location.href = "https://game.kdixfes.com";
+        });
            
         </script>
     </main>
@@ -107,9 +117,6 @@ all copies or substantial portions of the Software.
         <button id="instagram">
             <img src="../instaIcon.png" alt="インスタリンク" class="icon">
         </button>
-        <button id="game.kdixfes">
-            <img src="../jousai_magic/ProtMagic/EtherealBubble.PNG" alt="kdixgesリンク" class="icon">
-        </button>
     </section>
     <section class="jousai">
         <p align="right">令和6年度近畿大学情報学部祭実行委員会</p>
@@ -117,9 +124,6 @@ all copies or substantial portions of the Software.
     <script>
          document.getElementById("instagram").addEventListener("click", function() {
             window.location.href = "https://www.instagram.com/kdixjosai";
-        });
-        document.getElementById("game.kdixfes").addEventListener("click", function() {
-            window.location.href = "https://game.kdixfes.com";
         });
     </script>
 </footer>
