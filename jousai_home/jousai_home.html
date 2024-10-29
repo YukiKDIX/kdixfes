@@ -3,14 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>情報学部祭デジタルフロンティア</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@200..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="home_style.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <!-- 
+        <!-- 
 MIT License
 
 Copyright (c) [year] Michał Sajnóg
@@ -25,17 +24,12 @@ furnished to do so, subject to the following conditions:
 The above copyright notice and this permission notice shall be included in
 all copies or substantial portions of the Software.
 -->
-
 </head>
 <body>
- 
     <main>
-
-
         <section class="title">
-            <h2 data-aos="fade" data-aos-duration="1500" >情報学部祭<br>デジタルフロンティア</h2>
+            <h2 data-aos="fade" data-aos-duration="1500">情報学部祭<br>デジタルフロンティア</h2>
         </section>
-
 
         <section class="story" data-aos="fade-down" data-aos-duration="1200" data-aos-delay="700">
             <p>
@@ -48,12 +42,11 @@ all copies or substantial portions of the Software.
                 その物語が今ここで始まる。</p>
         </section>
 
-
         <section class="day_and_time" data-aos="fade" data-aos-duration="1200">
             <h2>日時</h2>
-            <p>11/2（土）〜 11/4 (月) <br>
-                10:00~19:00</p>
+            <p>11/2（土）〜 11/4 (月) <br>10:00~19:00</p>
         </section>
+
         <section class="game">
             <h2>ゲームアカウント作成</h2>
             <p>こちらから体験していただくゲームのアカウントを作成できます。</p>
@@ -61,8 +54,6 @@ all copies or substantial portions of the Software.
                 <img src="../game.kdixfes.PNG" alt="アカウント作成のリンク" class="button-game">
             </button>
         </section>
-
-
 
         <section class="place">
             <h2>場所</h2>
@@ -74,10 +65,12 @@ all copies or substantial portions of the Software.
     E館1階 i-CORE・・・ボスエリア
             </pre> 
         </section>
+
         <section class="buttonDetail">
             <h2>デジタルフロンティア詳細</h2>
             <p>クリックして詳細をご確認いただけます。↓</p>
         </section>
+
         <section class="navigation-buttons">
             <button id="areaBtn">
                 <img src="../area.PNG" alt="エリアボタン" class="button-image">
@@ -88,7 +81,10 @@ all copies or substantial portions of the Software.
             <button id="magicBtn">
                 <img src="../magic.PNG" alt="魔法ボタン" class="button-image">
             </button>
+        </section>
+
         <script>
+            // 内部リンク
             document.getElementById("areaBtn").addEventListener("click", function() {
                 window.location.href = "../jousai_area/jousai_area.html";
             });
@@ -100,12 +96,14 @@ all copies or substantial portions of the Software.
             document.getElementById("magicBtn").addEventListener("click", function() {
                 window.location.href = "../jousai_magic/jousai_magic.html";
             });
+
+            // 外部リンク（新規タブで開く）
             document.getElementById("game.kdixfes").addEventListener("click", function() {
-            window.location.href = "https://game.kdixfes.com";
-        });
-           
+                window.open("https://game.kdixfes.com", "_blank");
+            });
         </script>
     </main>
+
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         AOS.init();
@@ -121,11 +119,13 @@ all copies or substantial portions of the Software.
     <section class="jousai">
         <p align="right">令和6年度近畿大学情報学部祭実行委員会</p>
     </section>
+
     <script>
-         document.getElementById("instagram").addEventListener("click", function() {
-            window.location.href = "https://www.instagram.com/kdixjosai";
+        // 外部リンク（新規タブで開く）
+        document.getElementById("instagram").addEventListener("click", function() {
+            window.open("https://www.instagram.com/kdixjosai", "_blank");
         });
     </script>
 </footer>
-
 </html>
+
