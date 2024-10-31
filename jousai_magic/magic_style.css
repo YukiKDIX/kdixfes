@@ -138,6 +138,7 @@
         background-attachment: fixed; /* 背景画像を固定 */
         opacity: 0.3; /* 画像の透明度 */
         z-index: -1; /* コンテンツの後ろに配置 */
+        pointer-events: none; /* 背景画像がコンテンツの操作を妨げないようにする */
     }
 
     body {
