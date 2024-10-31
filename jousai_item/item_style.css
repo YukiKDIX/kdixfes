@@ -1,8 +1,6 @@
 /* ベース設定 */
 html, body {
     height: 0;
-    margin: 0;
-    padding: 0;
     font-family: 'Noto Serif JP', serif;
     background: #000;
     color: #fff;
@@ -138,9 +136,9 @@ body::before {
         border-radius: 0.5vw;
         margin: 2vw auto;
         max-width: 80vw;
-        font-size: 8vw;
+        font-size: 10vw;
         margin-top: 8vw;
-        margin-bottom: 20vw;
+        margin-bottom: 12vw;
     }
 
     .story {
@@ -227,5 +225,6 @@ body::before {
     .jousai {
         color: white;
         font-size: 3vw;
+        padding: 2vw;
     }
 }
