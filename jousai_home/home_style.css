@@ -298,7 +298,7 @@
     
     .footer {
         background-color: #333; /* 灰色背景 */
-        padding: 1vw;
+        padding: 5vw;
         height: 5vh; /* フッターの高さを小さく設定 */
         text-align: center;
         display: flex;
@@ -326,8 +326,8 @@
     }
     
     .iconButtons img {
-        width: 7vw; 
-        height: 7vw;
+        width: 8vw; 
+        height: 8vw;
     }
     
     .footer .jousai p {
