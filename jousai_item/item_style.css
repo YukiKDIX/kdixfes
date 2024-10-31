@@ -134,12 +134,11 @@
         top: 0;
         left: 0;
         width: 100vw;
-        height: 100vh;
+        height: 210vw;
         background: url('Rukurunn&Stera.jpeg') no-repeat center center/cover; /* 背景画像 */
         background-attachment: fixed; /* 背景画像を固定 */
         opacity: 0.3; /* 画像の透明度 */
         z-index: -1; /* コンテンツの後ろに配置 */
-        pointer-events: none; /* 背景画像がコンテンツの操作を妨げないようにする */
     }
     body {
         font-family: 'Noto Serif JP', serif;
