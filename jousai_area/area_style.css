@@ -7,7 +7,7 @@ body::before {
     left: 0;
     width: 100vw;
     height: 100vh;
-    background: url('../jousai_home/Bossbattle_lightup.jpg') no-repeat center center/cover; /* 背景画像 */
+    background: url('back01.jpeg') no-repeat center center/cover; /* 背景画像 */
     background-attachment: fixed; /* 背景画像を固定 */
     opacity: 0.3; /* 画像の透明度 */
     z-index: -1; /* コンテンツの後ろに配置 */
@@ -162,7 +162,7 @@ section h2 {
         left: 0;
         width: 100vw;
         height: 100vh;
-        background: url('../jousai_home/Bossbattle_lightup.jpg') no-repeat center center/cover; /* 背景画像 */
+        background: url('back01.jpeg') no-repeat center center/cover; /* 背景画像 */
         background-attachment: fixed; /* 背景画像を固定 */
         opacity: 0.3; /* 画像の透明度 */
         z-index: -1; /* コンテンツの後ろに配置 */

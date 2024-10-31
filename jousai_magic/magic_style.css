@@ -1,4 +1,16 @@
 @media(min-width: 769px) {
+    body::before {
+        content: '';
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background: url('wizard2.jpeg') no-repeat center center/cover; /* 背景画像 */
+        background-attachment: fixed; /* 背景画像を固定 */
+        opacity: 0.3; /* 画像の透明度 */
+        z-index: -1; /* コンテンツの後ろに配置 */
+    }
 
     body {
         font-family: 'Noto Serif JP', serif;
@@ -21,7 +33,7 @@
     .magic-item {
         width: 32%; /* 32%から25%に縮小 */
         margin-bottom: 4vw; /* 6vwから4vwに縮小 */
-        background-color: rgba(255, 255, 255, 0.1);
+        background-color: rgba(33, 33, 33, 0.7);
         padding: 1.5vw; /* 2vwから1.5vwに縮小 */
         border-radius: 0.5vw;
         transition: transform 0.3s ease, background-color 0.3s ease;
@@ -115,6 +127,18 @@
 
 
 @media(max-width: 768px){
+    body::before {
+        content: '';
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background: url('wizard2.jpeg') no-repeat center center/cover; /* 背景画像 */
+        background-attachment: fixed; /* 背景画像を固定 */
+        opacity: 0.3; /* 画像の透明度 */
+        z-index: -1; /* コンテンツの後ろに配置 */
+    }
 
     body {
         font-family: 'Noto Serif JP', serif;
@@ -151,7 +175,7 @@
     .magic-item {
         width: 45%; /* 40%から45%に拡大してバランスを調整 */
         margin-bottom: 2vw;
-        background-color: rgba(255, 255, 255, 0.1);
+        background-color: rgba(33, 33, 33, 0.7);
         border-radius: 1vw;
         padding: 1vw; /* パディングを追加 */
         transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
