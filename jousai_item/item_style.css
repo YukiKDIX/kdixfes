@@ -1,6 +1,6 @@
 /* ベース設定 */
 html, body {
-    height: 0%;
+    height: 0;
     margin: 0;
     padding: 0;
     font-family: 'Noto Serif JP', serif;
@@ -8,7 +8,7 @@ html, body {
     color: #fff;
 }
 
-/* 背景画像の設定 */
+/* 背景画像の設定を疑似要素で再現 */
 body::before {
     content: '';
     position: fixed;
@@ -17,10 +17,9 @@ body::before {
     width: 100vw;
     height: 100vh;
     background: url('Rukurunn&Stera.jpeg') no-repeat center center;
-    background-size: cover; /* 背景を横幅に合わせてカバー */
-    background-attachment: fixed; /* 背景画像を固定 */
-    opacity: 0.3; /* 透明度 */
-    z-index: -1; /* 背景をコンテンツの後ろに配置 */
+    background-size: cover;
+    opacity: 0.3;
+    z-index: -1;
 }
 
 /* PC版スタイル (769px以上) */
@@ -75,7 +74,7 @@ body::before {
         border-radius: 0.5vw;
         margin: 2vw auto;
         max-width: 70vw;
-        width: 100vw;
+        width: 100%;
     }
 
     .title h2 {
@@ -134,22 +133,23 @@ body::before {
 /* スマホ版スタイル (768px以下) */
 @media (max-width: 768px) {
     .title h2 {
-        padding: 1.5vw; /* 2vwから1.5vwに縮小 */
+        padding: 1.5vw;
         color: white;
         border-radius: 0.5vw;
         margin: 2vw auto;
         max-width: 80vw;
-        font-size: 10vw; /* 10vwから8vwに縮小 */
-        margin-top: 8vw; /* 10vwから8vwに縮小 */
-        margin-bottom: 20vw; /* 15vwから12vwに縮小 */
+        font-size: 8vw;
+        margin-top: 8vw;
+        margin-bottom: 20vw;
     }
-    
+
     .story {
         color: white;
-        padding: 1.5vw; /* 2vwから1.5vwに縮小 */
-        font-size: 3.5vw; /* 5vwから4vwに縮小 */
-        margin-bottom: 20vw; /* 12vwから10vwに縮小 */
+        padding: 1.5vw;
+        font-size: 3.5vw;
+        margin-bottom: 20vw;
     }
+
     .cityitem, .caveitem {
         text-align: center;
         font-size: 4vw;

@@ -1,14 +1,14 @@
 /* ベース設定 */
 html, body {
-    height: 0%;
+    height: 0;
     margin: 0;
     padding: 0;
     font-family: 'Noto Serif JP', serif;
-    background: #000; /* 黒背景 */
+    background: #000;
     color: #fff;
 }
 
-/* 背景画像設定 */
+/* 背景画像の設定を疑似要素で再現 */
 body::before {
     content: '';
     position: fixed;
@@ -17,10 +17,9 @@ body::before {
     width: 100vw;
     height: 100vh;
     background: url('wizard2.jpeg') no-repeat center center;
-    background-size: cover; /* 背景を横幅に合わせてカバー */
-    background-attachment: fixed; /* 背景画像を固定 */
-    opacity: 0.3; /* 画像の透明度 */
-    z-index: -1; /* コンテンツの後ろに配置 */
+    background-size: cover;
+    opacity: 0.3;
+    z-index: -1;
 }
 
 /* PC版スタイル (769px以上) */
@@ -193,6 +192,7 @@ body::before {
     }
 
     .story {
+        margin: 5vw;
         color: white;
         padding: 1.5vw;
         font-size: 4vw;
