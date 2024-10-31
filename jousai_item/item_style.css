@@ -1,29 +1,36 @@
-@media(min-width: 769px) {
-    body::before {
-        content: '';
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100vw;
-        height: 100vh;
-        background: url('Rukurunn&Stera.jpeg') no-repeat center center/cover; /* 背景画像 */
-        background-attachment: fixed; /* 背景画像を固定 */
-        opacity: 0.3; /* 画像の透明度 */
-        z-index: -1; /* コンテンツの後ろに配置 */
-    }
+/* ベース設定 */
+html, body {
+    height: 0%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Noto Serif JP', serif;
+    background: #000;
+    color: #fff;
+}
 
-    body {
-        font-family: 'Noto Serif JP', serif;
-        margin: 0;
-        padding: 0;
-        background: #000; /* 黒背景 */
-        color: #fff;
-    }
-    .cityitem,.caveitem {
+/* 背景画像の設定 */
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: url('Rukurunn&Stera.jpeg') no-repeat center center;
+    background-size: cover; /* 背景を横幅に合わせてカバー */
+    background-attachment: fixed; /* 背景画像を固定 */
+    opacity: 0.3; /* 透明度 */
+    z-index: -1; /* 背景をコンテンツの後ろに配置 */
+}
+
+/* PC版スタイル (769px以上) */
+@media (min-width: 769px) {
+    .cityitem, .caveitem {
         text-align: center;
         font-size: 2vw;
     }
-    .cityitem h3, .caveitem h3{
+
+    .cityitem h3, .caveitem h3 {
         font-size: 1.5vw;
     }
 
@@ -34,14 +41,13 @@
     }
 
     .item {
-        width: 25%; /* アイテム1ブロックあたりの幅 */
-        margin-bottom: 4vw; 
+        width: 25%;
+        margin-bottom: 4vw;
         background-color: rgba(33, 33, 33, 0.7);
         padding: 1.5vw;
         border-radius: 0.4vw;
-        transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+        transition: transform 0.3s, background-color 0.3s, box-shadow 0.3s;
     }
-   
 
     .item h3 {
         color: #fff;
@@ -57,8 +63,9 @@
         width: 6vw;
         height: 6vw;
     }
+
     .item:hover {
-        transform: scale(1.05)!important;
+        transform: scale(1.05);
         background-color: rgba(255, 255, 255, 0.2);
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
     }
@@ -103,23 +110,19 @@
         height: auto;
         display: block;
     }
-    
 
     .navigation-buttons button {
-        position: relative;
         background-color: transparent;
         border: none;
         padding: 0;
         cursor: pointer;
-        transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+        transition: transform 0.3s, background-color 0.3s, box-shadow 0.3s;
     }
 
-    
-
     .navigation-buttons button:hover {
-        transform: scale(1.05)!important;
+        transform: scale(1.05);
         background-color: rgba(255, 255, 255, 0.2);
-        box-shadow: 0px 0px 10px rgba(52, 152, 219, 0.75), inset 0px 0px 5px rgba(255, 255, 255, 0.5);
+        box-shadow: 0 0 10px rgba(52, 152, 219, 0.75), inset 0 0 5px rgba(255, 255, 255, 0.5);
     }
 
     .jousai {
@@ -127,61 +130,32 @@
         font-size: 1.5vw;
     }
 }
-@media(max-width:768px){
-    html, body {
-        height: 100%; /* 追加 */
-        margin: 0;
-        padding: 0;
-    }
-    body::before {
-        content: '';
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100vw;
-        height: 100vh;
-        background: url('Rukurunn&Stera.jpeg') no-repeat center center; /* 背景画像 */
-        background-size: 100% auto; /* 横幅に合わせて高さを自動調整 */
-        background-attachment: fixed; /* 背景画像を固定 */
-        opacity: 0.3; /* 画像の透明度 */
-        z-index: -1; /* コンテンツの後ろに配置 */
-    }
-    body {
-        font-family: 'Noto Serif JP', serif;
-        background: #000;
-        color: #fff;
-    }
 
-    main {
-        padding: 1.5vw;
-        border-radius: 0.5vw;
-        margin: 2vw auto;
-        max-width: 90vw;
-        width: 100vw;
-    }
-
+/* スマホ版スタイル (768px以下) */
+@media (max-width: 768px) {
     .title h2 {
-        padding: 1.5vw;
+        padding: 1.5vw; /* 2vwから1.5vwに縮小 */
         color: white;
         border-radius: 0.5vw;
         margin: 2vw auto;
         max-width: 80vw;
-        font-size: 7vw;
-        margin-top: 8vw;
-        margin-bottom: 12vw;
+        font-size: 10vw; /* 10vwから8vwに縮小 */
+        margin-top: 8vw; /* 10vwから8vwに縮小 */
+        margin-bottom: 20vw; /* 15vwから12vwに縮小 */
     }
-
+    
     .story {
         color: white;
-        padding: 1.5vw;
-        font-size: 3vw;
-        margin-bottom: 10vw;
+        padding: 1.5vw; /* 2vwから1.5vwに縮小 */
+        font-size: 3.5vw; /* 5vwから4vwに縮小 */
+        margin-bottom: 20vw; /* 12vwから10vwに縮小 */
     }
-    .cityitem,.caveitem{
+    .cityitem, .caveitem {
         text-align: center;
         font-size: 4vw;
     }
-    .cityitem h3,.caveitem h3{
+
+    .cityitem h3, .caveitem h3 {
         font-size: 3vw;
     }
 
@@ -189,16 +163,16 @@
         display: flex;
         justify-content: space-around;
         flex-wrap: wrap;
-        gap: 3vw; /* 間隔を追加 */
+        gap: 3vw;
     }
 
     .item {
         border-radius: 1vw;
-        width: 27%; /* アイテム1つあたりの大きさ*/
+        width: 27%;
         margin-bottom: 4vw;
         background-color: rgba(33, 33, 33, 0.7);
         padding: 1.5vw;
-        transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+        transition: transform 0.3s, background-color 0.3s, box-shadow 0.3s;
     }
 
     .item h3 {
@@ -212,11 +186,12 @@
     }
 
     .item img {
-        width: 15vw; 
+        width: 15vw;
         height: 15vw;
     }
+
     .item:hover {
-        transform: scale(1.05)!important; 
+        transform: scale(1.05);
         background-color: rgba(255, 255, 255, 0.2);
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
     }
@@ -236,20 +211,17 @@
     }
 
     .navigation-buttons button {
-        position: relative;
         background-color: transparent;
         border: none;
         padding: 0;
         cursor: pointer;
-        transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+        transition: transform 0.3s, background-color 0.3s, box-shadow 0.3s;
     }
 
-    
-
     .navigation-buttons button:hover {
-        transform: scale(1.05)!important; 
+        transform: scale(1.05);
         background-color: rgba(255, 255, 255, 0.2);
-        box-shadow: 0px 0px 10px rgba(52, 152, 219, 0.75), inset 0px 0px 5px rgba(255, 255, 255, 0.5);
+        box-shadow: 0 0 10px rgba(52, 152, 219, 0.75), inset 0 0 5px rgba(255, 255, 255, 0.5);
     }
 
     .jousai {
