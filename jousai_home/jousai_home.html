@@ -48,12 +48,16 @@ all copies or substantial portions of the Software.
         </section>
 
         <section class="game">
-            <h2>ゲームアカウント作成</h2>
+            <h2>ゲームアカウント作成 & ログイン</h2>
             <p>こちらから体験していただくゲームのアカウントを作成できます。</p>
-            <button id="game.kdixfes">
-                <img src="../game.kdixfes.PNG" alt="アカウント作成のリンク" class="button-game">
+            <button id="game.kdixfes.register">
+                <img src="../register.png" alt="アカウント作成のリンク" class="button-game">
+            </button>
+            <button id="game.kdixfes.login">
+                <img src="../login.png" alt="ログインのリンク" class="button-game">
             </button>
         </section>
+        
 
         <section class="place">
             <h2>場所</h2>
@@ -98,8 +102,11 @@ all copies or substantial portions of the Software.
             });
 
             // 外部リンク（新規タブで開く）
-            document.getElementById("game.kdixfes").addEventListener("click", function() {
+            document.getElementById("game.kdixfes.register").addEventListener("click", function() {
                 window.open("https://game.kdixfes.com/register", "_blank");
+            });
+            document.getElementById("game.kdixfes.login").addEventListener("click", function() {
+                window.open("https://game.kdixfes.com", "_blank");
             });
         </script>
     </main>
