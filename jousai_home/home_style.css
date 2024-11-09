@@ -7,7 +7,7 @@
         left: 0;
         width: 100%;
         height: 100%;
-        background: url('Bossbattle_lightup.jpg') no-repeat center center/cover; /* 背景画像 */
+        background: url('../jousai_area/boss/bossArea.jpeg') no-repeat center center/cover; /* 背景画像 */
         background-attachment: fixed; /* 背景画像を固定 */
         opacity: 0.5; /* 画像の透明度 */
         z-index: -1; /* コンテンツの後ろに配置 */
@@ -78,6 +78,7 @@
         border: none; /* ボタン内の画像の枠線をなくす */
         background: transparent; /* 画像以外の背景を透明に */
         box-shadow: none; /* 余計なシャドウがある場合に除去 */
+        filter: grayscale(100%);
     }
 
     .navigation-buttons {
@@ -188,7 +189,7 @@
         left: 0;
         width: 100vw;
         height: 130vw;
-        background: url('Bossbattle_lightup.jpg') no-repeat center center/cover; /* 背景画像 */
+        background: url('../jousai_area/boss/bossArea.jpeg') no-repeat center center/cover; /* 背景画像 */
         opacity: 0.5; /* 画像の透明度 */
         z-index: -1; /* コンテンツの後ろに配置 */
     }
@@ -252,6 +253,7 @@
         border: none; /* ボタン内の画像の枠線をなくす */
         background: transparent; /* 画像以外の背景を透明に */
         box-shadow: none; /* 余計なシャドウがある場合に除去 */
+        filter: grayscale(100%);
     }
 
     .buttonDetail{
